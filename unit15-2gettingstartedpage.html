@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="description" content="Python tutorials for beginners learning the basics.">
+<meta name="author" content="Jack Rolfe">
+<meta name="keywords" content="Python, Coding, Yellow, HTML, Variable, Blue, Strings, .COM, Snake, Computer, Laptop, Numbers, Java, CSS, LUA, Loops, website, web, canterbury, college , EKC, Canterbury College, Coding For the Web, Study, text, work, learn, homework, digital">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title> Coding For the Web {Getting Started} </title>
+
+<style>
+     @import url('https://fonts.cdnfonts.com/css/tt-autonomous-trl');
+header{
+width: 15%;
+float: left;
+border:3px,solid,black;
+display: flex;
+}
+nav{
+background-color: #242424;
+
+font-style: bold;
+font-size: 18px;
+width: 84.6%;
+height: 99px;
+display: flex;
+font-family: 'TT Autonomous Trl', sans-serif;
+}
+nav a{
+color: #FED142;
+text-decoration: none;
+padding: 2.37%;
+
+}
+nav a:hover{
+background-color: #ddd;
+color: #1AADE1;
+}
+section{
+flex-wrap: wrap;
+}
+
+.main{
+flex: 30%;
+color:#242424;
+background-color: #FED142;
+padding:1px;
+font-size: 26px;
+
+text-align: center;
+width: 99.8%;
+font-family: 'TT Autonomous Trl', sans-serif;
+
+}
+.side{
+float: left;
+display: flex;
+width: 70%;
+}
+.rside{
+float: left;
+background-color: black;
+
+width: 29.9%;
+text-align: center;
+}
+.rside a{
+text-decoration: none;
+color: #FED142;
+}
+.rside a :hover{
+background-color: #ddd;
+color: #1AADE1;
+}
+footer{
+background-color: #e6e6e6;
+text-align: center;
+
+font-size: 18px;
+float: left;
+width: 99.9%;
+height: 85px;
+font-family: 'TT Autonomous Trl', sans-serif;
+}
+footer a{
+text-decoration: none;
+color: black;
+padding: 1px;
+}
+footer a :hover{
+background-color: #242424;
+color: #FED142;
+}
+
+
+
+</style>
+</head>
+<body>
+<header>
+    <a href="file:///C:/Users/30091075/OneDrive%20-%20EKC%20Group/Website%20v2/unit15-2website.html">   
+        <img style="display: block;-webkit-user-select: none;"src="data:image/jpeg;base64,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">
+        </a>
+        </header>
+        <nav>
+        <a href="file:///C:/Users/30091075/OneDrive%20-%20EKC%20Group/Website%20v2/unit15-2website.html">Home </a>
+        <h1><span style="color:#FED142">|</span></h1>
+        <a href="file:///C:/Users/30091075/OneDrive%20-%20EKC%20Group/Website%20v2/unit15-2gettingstartedpage.html">Getting Started </a>
+        <h1><span style="color:#FED142">|</span></h1>
+        <a href="file:///C:/Users/30091075/OneDrive%20-%20EKC%20Group/Website%20v2/unit15-2Examples.html">Loops </a>
+        <h1><span style="color:#FED142">|</span></h1>
+        <a href="file:///C:/Users/30091075/OneDrive%20-%20EKC%20Group/Website%20v2/unit15-2strings.html">Strings </a>
+        <h1><span style="color:#FED142",font-size>|</span></h1>
+        <a href ="file:///C:/Users/30091075/OneDrive%20-%20EKC%20Group/Website%20v2/Unit15-2Variables.html">Variables</a>
+        <h1><span style="color:#FED142",font-size>|</span></h1>
+        <a href ="file:///C:/Users/30091075/OneDrive%20-%20EKC%20Group/Website%20v2/unit15-2numbers.html">Numbers</a>
+        <h1><span style="color:#FED142",font-size>|</span></h1>
+</nav>
+<section>
+<div class="main">
+    <h1><b><span style ="color: #3571A3;">Getting Started</span></b></h1>
+<b><p>Python Install
+    Many PCs and Macs will have python already installed.
+    
+    To check if you have python installed on a Windows PC, search in the start bar for Python or run the following on the Command Line (cmd.exe):
+    </p></b>
+
+<p1><b>
+    <div class="w3-code notranslate w3-black">
+       <span style="background-color: #242424;"><span style ="color: #FED142;"> C:\Users\<em>Your Name</em>&gt;python --version</span>
+        </div>
+</p1></b>
+<p><b>If you find that you do not have Python installed on your computer, then you can download it for free from the following website found in the python logo.</b></p>
+<p><b>
+    Let's write our first Python file, called helloworld.py, which can be done in any text editor.</p></b>
+    
+
+    <p><b><span style = "background-color: #242424;"><span style ="color: #FED142;">print("Hello, World!")</b></p>
+    <p><b>Simple as that. Save your file. Open your command line, navigate to the directory where you saved your file, and run:</b></p>
+    
+    
+    <P><b><span style = "background-color: #242424;"><span style ="color: #FED142;">The output should read:
+    
+    Hello, World!</b></p>
+    <p><b>Congratulations, you have written and executed your first Python program.</b></p>
+    
+    </b></p>
+ </div>
+ <div class="side">
+    <iframe width="1328" height="330" src="https://www.youtube.com/embed/6i3e-j3wSf0" title="Python Tutorial for Beginners with VS Code 🐍" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<div class="rside">
+    <a href="https://www.python.org/"><b>Use Python Now!</b>
+    <img style="display: block;-webkit-user-select: none;margin: auto;background-color: hsl(0, 0%, 90%);transition: background-color 300ms;height: 311px;" src="https://i.pinimg.com/564x/2f/9c/11/2f9c11f9e55efbf1791f12c06d60729b.jpg">
+</a>
+</div>
+<footer>
+<p>Copyright &copy;2025  Canterbury College  </p>
+<b><a href="file:///C:/Users/30091075/OneDrive%20-%20EKC%20Group/Website%20v2/unit%2015-2%20contact.html">Contact</a></b>
+</footer>
+</div>
+
+
+</body>
+</html>
